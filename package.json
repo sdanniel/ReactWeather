@@ -1,5 +1,5 @@
 {
-  "name": "hello-react",
+  "name": "react-weather",
   "version": "1.0.0",
   "description": "",
   "main": "index2.js",
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.15.3",
+    "es6-promise": "^4.0.5",
     "express": "^4.14.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -24,6 +25,11 @@
     "babel-preset-es2017": "^6.16.0",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "foundation-sites": "^6.3.0",
+    "jquery": "^3.1.1",
+    "script-loader": "^0.7.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.14.0"
   }
 }

@@ -1,5 +1,24 @@
+var webpack = require('webpack');
+
+if (global.Promise == null) {
+    global.Promise = require('es6-promise')
+}
+
 module.exports = {
-    entry: "app/app.jsx",
+    entry: [
+        'script!jquery/dist/jquery.min.js',
+        'script!foundation-sites/dist/js/foundation.min.js',
+        'app/app.jsx'
+    ],
+    externals: {
+      jquery: 'jQuery'
+    },
+    plugins: [
+      new webpack.ProvidePlugin({
+        '$': 'jquery',
+        'jQuery': 'jquery'
+      })
+    ],
     output: {
         path: __dirname + "/public",
         filename: "bundle.js"
