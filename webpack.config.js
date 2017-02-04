@@ -1,8 +1,7 @@
 var webpack = require('webpack');
 
-if (global.Promise == null) {
-    global.Promise = require('es6-promise')
-}
+global.Promise = global.Promise || require('es6-promise');
+
 
 module.exports = {
     entry: [
